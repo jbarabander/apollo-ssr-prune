@@ -10,9 +10,11 @@ const Provider = ({ prune, ...otherProps }) => (
   <DataTreeContext.Provider {...otherProps} value={prune}/>
 );
 
-Provider.displayName = "ApolloSsrPruneProvider";
+Provider.defaultProps = {
+  prune: false
+};
 
-export const HideFromDataTreeProvider = DataTreeContext.Provider;
+Provider.displayName = "ApolloSsrPruneProvider";
 
 const ApolloSsrPrune = ({ children }) => (
   <DataTreeContext.Consumer>
@@ -32,7 +34,6 @@ const ssrPrune = (Component) => {
   };
   NewComponent.displayName = `ApolloSsrPrune(${getComponentDisplayName(Component)})`;
   return NewComponent;
-}
 
 export {
     Provider,
