@@ -1,0 +1,22 @@
+{
+  "name": "apollo-ssr-prune",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Justin Barabander <justin.barabander@jet.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.5.2"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2"
+  }
+}
