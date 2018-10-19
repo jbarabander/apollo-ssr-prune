@@ -34,6 +34,7 @@ const ssrPrune = (Component) => {
   };
   NewComponent.displayName = `ApolloSsrPrune(${getComponentDisplayName(Component)})`;
   return NewComponent;
+}
 
 export {
     Provider,
