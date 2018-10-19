@@ -8,7 +8,9 @@
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
