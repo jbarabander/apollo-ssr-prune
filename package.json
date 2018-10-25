@@ -2,7 +2,7 @@
   "name": "apollo-ssr-prune",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "author": "Justin Barabander <justin.barabander@jet.com>",
+  "author": "Justin Barabander <jbarabander@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir lib",
